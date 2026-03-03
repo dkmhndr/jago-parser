@@ -30,7 +30,11 @@ Aplikasi web untuk mengkonversi PDF mutasi rekening Bank Jago menjadi format CSV
 
 ```bash
 # Clone repository
+<<<<<<< HEAD
 git clone https://github.com/dkmhndr/jago-parser.git
+=======
+git clone https://github.com/yourusername/jago-parser.git
+>>>>>>> 10b682d (docs: update README and UI text for clarity on PDF processing architecture and privacy)
 cd jago-parser
 
 # Install dependencies

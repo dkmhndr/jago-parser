@@ -328,16 +328,20 @@ export default function Home() {
 
             <div className="mt-3 space-y-2 text-sm leading-relaxed text-zinc-700">
               <p>
-                File PDF kamu diproses secara lokal di sesi aplikasi ini
-                (browser + app yang kamu jalankan sendiri di perangkatmu).
+                <strong>Arsitektur:</strong> File PDF kamu dikirim ke Next.js
+                server (yang kamu host/jalankan sendiri) untuk diproses dengan
+                regex, lalu hasilnya dikembalikan ke browser.
               </p>
               <p>
-                Data tidak dikirim ke layanan AI eksternal, analytics pihak
-                ketiga, atau penyimpanan cloud dari aplikasi ini.
+                <strong>Yang TIDAK dilakukan:</strong> Data tidak dikirim ke
+                layanan AI eksternal, analytics pihak ketiga, cloud storage,
+                atau disimpan di database.
               </p>
               <p>
-                Setelah proses selesai, hasilnya langsung kamu download sebagai
-                CSV/Excel dari perangkat kamu sendiri.
+                <strong>Catatan:</strong> Jika kamu deploy ke hosting provider
+                (Vercel, dll), mereka secara teknis bisa akses file selama
+                request. Untuk privasi maksimal, run di localhost atau VPS
+                pribadi.
               </p>
             </div>
 
